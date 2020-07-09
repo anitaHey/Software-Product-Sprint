@@ -1,9 +1,217 @@
-#content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
+body{
+    font-family: 'Monda', sans-serif;
+    font-size:20px;
+    text-align: center;
+    margin: 0;
+    /* background-color: #D7C4BB; */
 }
 
-#greeting-container {
-  margin-top: 20px;
+body::-webkit-scrollbar {
+    width: 13px;
+    height: 13px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #a39e9e;
+}
+
+hr {
+    border: 0;
+    border-top: 10px solid rgb(165, 151, 145);
+}
+
+#first{
+    height:100vh;
+    position: relative;
+
+    background-color: #DCDCDD;
+}
+
+#second {
+    min-height: 100vh;
+    background-color: #f7f7fa;
+}
+
+.content{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#name {
+    font-family: 'Russo One', sans-serif;
+    font-size: 100px;
+    padding-top: 150px;
+
+    color:#474747;
+}
+
+#contact {
+    height:35px;
+    color: #4f433e;
+}
+
+a {
+    color: #4f433e;
+}
+
+a:hover{
+    color: #302926;
+}
+
+.mr-3 {
+    margin-right:20px;
+}
+
+.mt-1{
+    margin-top: 5px;
+}
+
+.mt-8 {
+    margin-top: 100px;
+}
+
+.mt-5{
+    margin-top: 50px;
+}
+
+.navi_btn {
+    width:250px;
+    height:100px;
+
+    border:0;
+    position: relative;
+    opacity: 0.8;
+}
+
+.navi_btn:hover:before{
+    font-size: 35px;
+    font-family: 'Russo One', sans-serif;
+}
+
+.navi_btn:hover i{
+    opacity: 0.15;
+}
+
+#education_btn{
+    color:#b2998e;
+    background-color:#524640;
+}
+
+#education_btn:hover{
+    background-color:#b2998e;
+    color: #524640;
+}
+
+#education_btn:hover:before {
+    content: "EDUCATION";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#work_btn{
+    color:#DCC6C6;
+    background-color:rgb(116, 91, 91);
+}
+
+#work_btn:hover{
+    background-color:#DCC6C6;
+    color: rgb(116, 91, 91);
+}
+
+#work_btn:hover:before {
+    content: "WORK EXPERIENCE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#skill_btn{
+    color:rgb(207, 204, 224);
+    background-color:rgb(115, 110, 143);
+}
+
+#skill_btn:hover{
+    background-color:rgb(207, 204, 224);
+    color: rgb(115, 110, 143);
+}
+
+#skill_btn:hover:before {
+    content: "TECHNICAL SKILLS";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#award_btn{
+    color:#ccb0ae;
+    background-color:#854e4b;
+}
+
+#award_btn:hover{
+    background-color:#ccb0ae;
+    color: #854e4b;
+}
+
+#award_btn:hover:before {
+    content: "COMPETITION, AWARDS";
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#project_btn{
+    color:#b6c3cf;
+    background-color:#687c8d;
+}
+
+#project_btn:hover{
+    background-color:#b6c3cf;
+    color: #687c8d;
+}
+
+#project_btn:hover:before {
+    content: "PROJECT";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#blank{
+    background-color: #49494b;
+    color: #49494b;
+}
+
+#first_next{
+    position: absolute;
+    left:50%;
+    bottom:5%;
+    transform: translateX(-50%);
+
+    background-color: transparent;
+    border:0;
+}
+
+#first_next i{
+    color: #474747;
+}
+
+#first_next:hover i{
+    color: #806d6d;
 }

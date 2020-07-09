@@ -3,16 +3,43 @@
   <head>
     <meta charset="UTF-8">
     <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monda&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
   </head>
   <body>
-    <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+    <div id="first">
+        <div class="content">
+            <div id="name">Anita Chang</div>
+            <div class="mt-5">
+                    <div>
+                        <button id="education_btn" class="navi_btn"><i class="fas fa-school fa-5x"></i></button>
+                        <button id="work_btn" class="navi_btn"><i class="fas fa-briefcase fa-5x"></i></button>
+                        <button id="skill_btn" class="navi_btn"><i class="fas fa-laptop fa-5x"></i></button>
+                    </div>
+                    <div class="mt-1">
+                        <button id="award_btn" class="navi_btn"><i class="fas fa-medal fa-5x"></i></button>
+                        <button id="blank" class="navi_btn"><i class="fas fa-briefcase fa-5x"></i></button>
+                        <button id="project_btn" class="navi_btn"><i class="fas fa-book fa-5x"></i></button>
+                    </div>
+                </div>
+                <div id="contact" class="mt-8">
+                <i class="fas fa-envelope fa-lg small_icon"></i>
+                <span class="mr-3 icon_word">jiaa.anita@gmail.com</span>
+                <i class="fab fa-github fa-lg small_icon"></i>
+                <a href="https://github.com/anitaHey" class="icon_word">github.com/anitaHey</a>
+            </div>
+            <button id="first_next"><i class="fas fa-arrow-alt-circle-down fa-3x"></i></button>
+        </div>
     </div>
+    <div id="second">
+        <div class="content">
+
+        </div>
+    </div>
+    
+    <script src="/tools/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
