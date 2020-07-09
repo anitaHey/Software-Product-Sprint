@@ -18,4 +18,23 @@ $( document ).ready(function() {
             scrollTop: $("#second").offset().top
         }, 1500);
     });
+
+    $('#education_btn').click(function(){
+        $('html, body').animate({
+            scrollTop: $("#education").offset().top
+        }, 1000);
+    });
+
+    $('#work_btn').click(function(){
+        $('html, body').animate({
+            scrollTop: $("#work").offset().top
+        }, 1000);
+    });
+
+    $('.detail_button').click(function(){
+        $content = $(this).parent().next();        
+        $content.slideToggle(500);
+    });
+
+    $('.detail_content').hide();
 });

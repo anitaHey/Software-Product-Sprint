@@ -6,6 +6,10 @@ body{
     /* background-color: #D7C4BB; */
 }
 
+*:focus{
+    outline: none;
+}
+
 body::-webkit-scrollbar {
     width: 13px;
     height: 13px;
@@ -72,7 +76,15 @@ a:hover{
     margin-right:20px;
 }
 
+.ml-2 {
+    margin-left:10px;
+}
+
 .mt-1{
+    margin-top: 5px;
+}
+
+.mt-2{
     margin-top: 5px;
 }
 
@@ -82,6 +94,10 @@ a:hover{
 
 .mt-5{
     margin-top: 50px;
+}
+
+.hide{
+    display: none;
 }
 
 .navi_btn {
@@ -214,4 +230,76 @@ a:hover{
 
 #first_next:hover i{
     color: #806d6d;
+}
+
+.second_content {
+    display:flex;
+    padding:50px 0px;
+}
+
+.second_content > div{
+    display: inline-block;
+}
+
+.second_title{
+    font-size: 65px;
+    font-weight: bold;
+    width:35%;
+    border-right: 2px solid rgb(0, 0, 0);
+    text-align: right;
+    padding:50px 80px;
+}
+
+.second_sm_content{
+    width:45%;
+    padding: 50px 0px;
+}
+
+.title{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.subtitle{
+    font-size: 25px;
+}
+
+.detail_button {
+    border:0;
+    background-color: transparent;
+    color: #4f433e;
+
+    font-size: 23px;
+    font-family: 'Monda', sans-serif;
+    border-bottom: 1px solid #4f433e;
+}
+
+.detail_button:hover {
+    color: #806d6d;
+}
+
+.detail_content{
+    display: flex;
+    justify-content: center;
+}
+
+.detail_content_width{
+    width:70%;
+    padding:10px;
+    margin:20px 10px;
+    border:2px solid #4f433e;
+}
+
+.detail_title{
+    font-weight: bold;
+    border-bottom: 1px solid #4f433e;
+    margin-bottom: 5px;
+}
+
+.detail_content ul {
+    display: inline-block;
+}
+
+.detail_content li {
+    text-align: left;
 }
