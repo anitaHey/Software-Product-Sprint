@@ -23,12 +23,15 @@
                         <button id="blank" class="navi_btn"><i class="fas fa-briefcase fa-5x"></i></button>
                         <button id="project_btn" class="navi_btn"><i class="fas fa-book fa-5x"></i></button>
                     </div>
-                </div>
-                <div id="contact" class="mt-8">
+            </div>
+            <div id="contact" class="mt-8">
                 <i class="fas fa-envelope fa-lg small_icon"></i>
                 <span class="mr-3 icon_word">jiaa.anita@gmail.com</span>
                 <i class="fab fa-github fa-lg small_icon"></i>
                 <a href="https://github.com/anitaHey" class="icon_word">github.com/anitaHey</a>
+                <br><br>
+                <i class="fas fa-comment-alt fa-lg small_icon"></i>
+                <button class="mr-3 icon_word" id="message_btn">Feel free to leave me a message below:)</button>
             </div>
             <button id="first_next"><i class="fas fa-arrow-alt-circle-down fa-3x"></i></button>
         </div>
@@ -66,7 +69,7 @@
                                 </ul>
                             </div>
                         </div>
-                    <div>
+                    </div>
                     <div class="mt-5">
                         <div class="title">Engineering Practicum Intern</div>
                         <div class="subtitle mt-2">Google</div>
@@ -82,9 +85,22 @@
                                 
                             </div>
                         </div>
-                    <div>
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="third">
+        <div class="third_title">Message</div>
+        <div id="message_board">
+        </div>
+        <div class="send_part">
+            <form id="input_form" method="POST" action="/new-message">
+                <input type="text" name="username" placeholder="Enter name or nickname" class="input_text" /><br>
+                <textarea id="message" name="message" class="input_text" form="input_form"></textarea>
+                <br>
+                <button class="input_btn">SUBMIT</button>
+            </form>
         </div>
     </div>
     

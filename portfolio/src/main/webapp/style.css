@@ -45,6 +45,11 @@ hr {
     background-color: #f7f7fa;
 }
 
+#third {
+    min-height: 100vh;
+    background-color: #DCDCDD;
+}
+
 .content{
     width: 80%;
     margin-left: auto;
@@ -232,6 +237,20 @@ a:hover{
     color: #806d6d;
 }
 
+#message_btn {
+    background-color: transparent;
+    border:0;
+    border-bottom: 1px solid #4f433e;
+
+    font-family: 'Monda', sans-serif;
+    font-size:20px;
+}
+
+#message_btn:hover{
+    color: #806d6d;
+    border-color: #806d6d;
+}
+
 .second_content {
     display:flex;
     padding:50px 0px;
@@ -302,4 +321,86 @@ a:hover{
 
 .detail_content li {
     text-align: left;
+}
+
+.third_title{
+    font-family: 'Russo One', sans-serif;
+    font-size: 70px;
+    padding-top: 50px;
+    color:#474747;
+}
+
+#message_board{
+    padding:30px 20px;
+    /* border-bottom: 1px solid #4f433e; */
+}
+
+.input_text{
+    border:2px solid #474747;
+    background-color: #f7f7fa;
+    height:50px;
+    width:40%;
+    margin-top:30px;
+    font-family: 'Monda', sans-serif;
+    font-size:23px;
+
+    border-radius: 20px;
+    padding:10px;
+}
+
+#message{
+    height:300px;
+    padding:20px;
+}
+
+.input_btn {
+    background-color:#474747;
+    color: #f7f7fa;
+    height:50px;
+    width:120px;
+
+    font-family: 'Monda', sans-serif;
+    font-size:23px;
+    border:0;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+.input_btn:hover{
+    background-color: #806d6d;
+}
+
+.message_flex{
+    display: flex;
+    justify-content: center;
+}
+
+.message_list{
+    width:40%;
+    padding:25px 0px;
+    margin:25px 0px;
+    border-bottom: 1px solid #4f433e;
+}
+
+.message_content{
+    font-size: 25px;
+    text-align: left;
+}
+
+.message_last{
+    text-align: right;
+    margin-top: 30px;
+}
+
+.message_last div{
+    display: inline-block;
+}
+
+.message_name{
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.message_time{
+    margin-left: 30px;
 }
