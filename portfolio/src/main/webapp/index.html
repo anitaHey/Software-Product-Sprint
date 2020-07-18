@@ -82,7 +82,6 @@
                                     <li>Create unit test for pixel</li>
                                     <li>Automate testing for daliy test</li>
                                 </ul>
-                                
                             </div>
                         </div>
                     </div>
@@ -95,15 +94,19 @@
         <div id="message_board">
         </div>
         <div class="send_part">
-            <form id="input_form" method="POST" action="/new-message">
+            <form id="input_form" method="POST" enctype="multipart/form-data">
                 <input type="text" name="username" placeholder="Enter name or nickname" class="input_text" /><br>
                 <textarea id="message" name="message" class="input_text" form="input_form"></textarea>
                 <br>
+                <div class="image_word">Add some image?</div>
+                <label for="image_upload" class="custom_image_upload">Choose file</label>
+                <div id="upload_image_name"></div>
+                <input id="image_upload" type="file" name="image" accept="image/*">
+                <br><br>
                 <button class="input_btn">SUBMIT</button>
             </form>
         </div>
     </div>
-    
     <script src="/tools/jquery-3.5.1.min.js"></script>
     <script src="script.js"></script>
   </body>

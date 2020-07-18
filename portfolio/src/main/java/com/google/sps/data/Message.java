@@ -21,12 +21,14 @@ public final class Message {
   private final String username;
   private final String content;
   private final String date;
+  private final String image_url;
   private final long timestamp;
 
-  public Message(long id, String username, String content, String date, long timestamp) {
+  public Message(long id, String username, String content, String image_url, String date, long timestamp) {
     this.id = id;
     this.username = username;
     this.content = content;
+    this.image_url = image_url;
     this.date = date;
     this.timestamp = timestamp;
   }

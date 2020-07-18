@@ -46,10 +46,11 @@ public class ListMessageServlet extends HttpServlet {
       long id = entity.getKey().getId();
       String username = (String) entity.getProperty("username");
       String content = (String) entity.getProperty("content");
+      String image_url = (String) entity.getProperty("image_url");
       String date = (String) entity.getProperty("date");
       long timestamp = (long) entity.getProperty("timestamp");
 
-      Message message = new Message(id, username, content, date, timestamp);
+      Message message = new Message(id, username, content, image_url, date, timestamp);
       messages.add(message);
     }
 

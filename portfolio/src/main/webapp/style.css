@@ -81,6 +81,10 @@ a:hover{
     margin-right:20px;
 }
 
+.mr-1 {
+    margin-right:5px;
+}
+
 .ml-2 {
     margin-left:10px;
 }
@@ -403,4 +407,38 @@ a:hover{
 
 .message_time{
     margin-left: 30px;
+}
+
+.message_image_div{
+    margin-top:30px;
+}
+
+.message_image{
+    max-width: 90%;
+}
+
+.custom_image_upload {
+    background-color: transparent;
+    border:2px solid #474747;
+    color: #474747;
+    height:60px;
+    width:140px;
+    padding:5px;
+    font-family: 'Monda', sans-serif;
+    font-size:23px;
+}
+
+.custom_image_upload:hover {
+    color: #f7f7fa;
+    background-color: #474747;
+}
+
+.image_word{
+    font-size:23px;
+    margin-bottom: 15px;
+}
+
+#upload_image_name{
+    margin-top: 10px;
+    font-size:23px;
 }
