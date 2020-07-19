@@ -93,6 +93,7 @@
         <div class="third_title">Message</div>
         <div id="message_board">
         </div>
+        <div class="response"></div>
         <div class="send_part">
             <form id="input_form" method="POST" enctype="multipart/form-data">
                 <input type="text" name="username" placeholder="Enter name or nickname" class="input_text" /><br>
@@ -104,6 +105,13 @@
                 <input id="image_upload" type="file" name="image" accept="image/*">
                 <br><br>
                 <button class="input_btn">SUBMIT</button>
+                <div class="login pb-5">
+                    <div>You have to login to send the commit.</div>
+                    <a class="mt-4 login_btn ">Login here</a>
+                </div>
+                <div class="logout pb-5">
+                    <a class="mt-4 logout_btn">Logout here</a>
+                </div>
             </form>
         </div>
     </div>
