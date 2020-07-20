@@ -27,10 +27,30 @@ $( document ).ready(function() {
       .then((response) => {
         return response.text();
       })
-      .then((imageUploadUrl) => {
+      .then((url) => {
         const messageForm = document.getElementById('input_form');
-        messageForm.action = imageUploadUrl;
+        messageForm.action = url;
         $("#input_form").show();
+      });
+
+    fetch('/log')
+     .then((response) => {
+        return response.text();
+      })
+      .then((url) => {
+          var arr = url.split('\n');
+          if(arr[0] != "false") {
+            $('.login').show();
+            $('.logout').hide();
+            $('.input_btn').hide();
+            $('.login_btn').attr("href", arr[0]);
+        } else {
+            $('.login').hide();
+            $('.input_btn').show();
+            $('.logout').show();
+            $('input[name=username]').val(arr[1]);
+            $('.logout_btn').attr("href", arr[2]);
+        }
       });
 
     $('#first_next').click(function(){

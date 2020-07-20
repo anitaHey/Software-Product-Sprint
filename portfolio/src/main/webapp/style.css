@@ -97,6 +97,14 @@ a:hover{
     margin-top: 5px;
 }
 
+.mt-4{
+    margin-top: 15px;
+}
+
+.pb-5 {
+    padding-bottom: 50px;
+}
+
 .mt-8 {
     margin-top: 100px;
 }
@@ -357,7 +365,7 @@ a:hover{
     padding:20px;
 }
 
-.input_btn {
+.input_btn, .login_btn, logout_btn {
     background-color:#474747;
     color: #f7f7fa;
     height:50px;
@@ -367,10 +375,10 @@ a:hover{
     font-size:23px;
     border:0;
     margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
 }
 
-.input_btn:hover{
+.input_btn:hover, .login_btn:hover, logout_btn:hover{
     background-color: #806d6d;
 }
 
